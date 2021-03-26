@@ -37,7 +37,58 @@ body {
   transition: all 0.3s ease-out;
 }
 /* Button 1 */
+.button_1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f0c808;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: translateX(-20rem);
+  transition: transform 0.5s;
+}
+
+.button_1:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.button_1:hover:before {
+  transform: translateX(0px);
+}
 
 /* Button 2 */
 
+.button_2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f0c808;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: translateY(-100%);
+  transition: all 0.2s ease-out;
+}
+
+.button_2:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.button_2:hover:before {
+  transform: translateY(0px);
+}
+
 /* Button 3 */
+
+.button_3:hover {
+  transform: translateY(-2px) scale(1.1);
+  background-color: #f0c808;
+  color: white;
+}
