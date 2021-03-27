@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 
 /* CSS reset */
 *,
@@ -36,3 +36,25 @@ a {
   transition: all 0.3s ease-out;
 }
 /* Menu Animations */
+
+a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background-color: rgba(255, 88, 61, 0.5);
+  transform: translateX(-100%);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #ff584d;
+  transition: all 0.3s ease-out;
+}
+
+a:hover::after {
+  transition: all 0.3s ease-out;
+  transform: translateX(0);
+}
