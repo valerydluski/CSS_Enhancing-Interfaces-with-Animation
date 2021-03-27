@@ -1,5 +1,5 @@
 /* CSS reset */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 *,
 *::after,
 *::before {
@@ -71,3 +71,22 @@ h2 {
   opacity: 0;
 }
 /* Hover animations */
+.robot:hover img {
+  transform: scale(5);
+  opacity: 0;
+}
+
+.robot:hover .mask {
+  opacity: 1;
+}
+
+.robot:hover .shop,
+.robot:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.shop:hover {
+  background: white;
+  color: #333;
+}
